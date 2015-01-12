@@ -1,14 +1,10 @@
 package com.xiaos.adapter.base;
 
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.drawable.Drawable;
 import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
    
   
 public class ViewHolder  
@@ -70,118 +66,6 @@ public class ViewHolder
         return (T) view;  
     }  
   
-    /** 
-     * 为TextView设置字符串 
-     *  
-     * @param viewId 
-     * @param text 
-     * @return 
-     */  
-    public ViewHolder setText(int viewId, String text)  
-    {  
-        TextView view = getView(viewId);  
-        view.setText(text);  
-        return this;  
-    } 
-    
-    /** 
-     * 为TextView设置背景
-     *  
-     * @param viewId 
-     * @param text 
-     * @return 
-     */  
-    public ViewHolder setTextBackgroud(int viewId, Drawable drawable)  
-    {  
-        TextView view = getView(viewId);  
-        view.setBackground(drawable);  
-        return this;  
-    } 
-    
-    /** 
-     * 为TextView设置背景
-     *  
-     * @param viewId 
-     * @param text 
-     * @return 
-     */  
-    public ViewHolder setTextBackgroud(int viewId, int drawableId)  
-    {  
-        TextView view = getView(viewId);  
-        view.setBackgroundResource(drawableId);  
-        return this;  
-    }  
-  
-    /** 
-     * 为ImageView设置图片 
-     *  
-     * @param viewId 
-     * @param drawableId 
-     * @return 
-     */  
-    public ViewHolder setImageResource(int viewId, int drawableId)  
-    {  
-        ImageView view = getView(viewId);  
-        view.setImageResource(drawableId);  
-  
-        return this;  
-    }  
-  
-    /** 
-     * 为ImageView设置图片 
-     *  
-     * @param viewId 
-     * @param bm 
-     * @return 
-     */  
-    public ViewHolder setImageBitmap(int viewId, Bitmap bm)  
-    {  
-        ImageView view = getView(viewId);  
-        view.setImageBitmap(bm);  
-        return this;  
-    }  
-    
-    /** 
-     * 为ImageView设置图片 
-     *  
-     * @param viewId 
-     * @param drawable 
-     * @return 
-     */  
-    public ViewHolder setImageBackground(int viewId, Drawable drawable)  
-    {  
-        ImageView view = getView(viewId);  
-        view.setBackground(drawable);  
-        return this;  
-    } 
-    
-    /** 
-     * 为ImageView设置图片 
-     *  
-     * @param viewId 
-     * @param drawableId 
-     * @return 
-     */  
-    public ViewHolder setImageBackgroundResource(int viewId, int drawableId)  
-    {  
-        ImageView view = getView(viewId);  
-        view.setBackgroundResource(drawableId);  
-        return this;  
-    }
-    
-    /** 
-     * 为ImageView设置图片 
-     *  
-     * @param viewId 
-     * @param drawable 
-     * @return 
-     */  
-    public ViewHolder setImageDrawable(int viewId, Drawable drawable)  
-    {  
-        ImageView view = getView(viewId);  
-        view.setImageDrawable(drawable);  
-        return this;  
-    }
     
     /** 
      * 为ImageView设置图片 
